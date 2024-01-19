@@ -2,8 +2,7 @@ Feature: Graph Page Feature
 
 Background:
 Given User is logged in to the application
-|username||password|
-|SirishaSA||Success4you!|
+
 
 Scenario: Graph Page
 Given User is on Home Page
@@ -20,7 +19,7 @@ When User enters the text in the TextBox "print(Hello)"
 And Clicks on the Run button
 Then Result is displayed on the console
 
-Scenario: Graph Page
+Scenario: Graph Page  Graph Representations in Graph page
 Given User is on Home Page
 When User Clicks on the Get Started button under Graph Section
 Then Graph Page opens up

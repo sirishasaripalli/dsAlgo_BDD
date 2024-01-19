@@ -7,9 +7,9 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"src/test/resources/features"},
+		features = {"src/test/resources/features/GraphPage.feature"},
 		glue = {"StepDefinitions", "AppHooks"},
-		//tags ="@Smoke",
+		//tags ="@tag1",
 		plugin = {"pretty",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",	
 				"timeline:test-output-thread/"

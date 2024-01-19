@@ -1,8 +1,12 @@
 package StepDefinitions;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 
 import Pages.signinpage;
+import Utilities.ReadExcelDataRows;
 import Factory.DriverFactory;
 
 import io.cucumber.java.en.Given;
@@ -11,6 +15,21 @@ import io.cucumber.java.en.When;
 
 public class SigninSteps {
 	private signinpage sgn = new signinpage(DriverFactory.getDriver());
+	
+	@Given("User is logged in to the application")
+	public void user_is_logged_in_to_the_application() {
+	//List<Map<String, String>> credentialList = credTable.asMaps();
+	List<String> ArrayList = new ArrayList<String>();
+	ArrayList = ReadExcelDataRows.ReadRows();
+	String UserName = ArrayList.get(0);
+	String Password =  ArrayList.get(1);
+	
+	DriverFactory.getDriver().get("https://dsportalapp.herokuapp.com/login");
+
+	sgn.dologin(UserName, Password);
+	    
+	}
+	
 	@Given("Browser is open")
 	public void browser_is_open() {
 	DriverFactory.getDriver().get("https://dsportalapp.herokuapp.com/");	

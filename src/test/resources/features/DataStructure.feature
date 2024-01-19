@@ -3,8 +3,7 @@ Feature: DataStructure Page Feature
 
 Background:
 Given User is logged in to the application
-|username||password|
-|SirishaSA||Success4you!|
+
 
 Scenario: DataStructure Page
   Given User is on Home Page

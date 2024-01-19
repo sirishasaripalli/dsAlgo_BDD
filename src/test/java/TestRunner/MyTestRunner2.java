@@ -9,10 +9,13 @@ import io.cucumber.testng.CucumberOptions;
 
 //@RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"src/test/resources/features"},
+		features = {"src/test/resources/features/ArrayPage.feature"},
 		glue = {"StepDefinitions", "AppHooks"},
 		//tags ="@Smoke",
 		plugin = {"pretty",
+				"json:target/MyReports/report.json",
+				"html:target/MyReports/report.html",
+				"junit:target/MyReports/report.junit",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",	
 				"timeline:test-output-thread/"
 				}

@@ -2,10 +2,9 @@ Feature: Array Page Feature
 
 Background:
 Given User is logged in to the application
-|username||password|
-|SirishaSA||Success4you!|
 
-Scenario: Array Page
+@tag1
+Scenario: Array Page Arrays in Python
 Given User is on Home Page
 When User Clicks on the Get Started button under Array Section
 Then Array Page opens up
@@ -29,7 +28,7 @@ And Clicks on the Run button
 Then Result is displayed on the console
 
 
-Scenario: Array Page
+Scenario: Array Page Basic Operations in Lists page
 Given User is on Home Page
 When User Clicks on the Get Started button under Array Section
 Then Array Page opens up
@@ -45,7 +44,7 @@ And Clicks on the Run button
 Then Result is displayed on the console
 
 
-Scenario: Array Page
+Scenario: Array Page Applications of Array page
 Given User is on Home Page
 When User Clicks on the Get Started button under Array Section
 Then Array Page opens up
@@ -61,7 +60,7 @@ And Clicks on the Run button
 Then Result is displayed on the console
 
 
-Scenario: Array Page
+Scenario: Array Page Arrays Using List page
 Given User is on Home Page
 When User Clicks on the Get Started button under Array Section
 Then Array Page opens up

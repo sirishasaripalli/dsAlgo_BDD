@@ -16,21 +16,10 @@ import io.cucumber.java.en.When;
 
 public class DataStructurePageSteps {
 	
-	private signinpage sgnpage = new signinpage(Factory.DriverFactory.getDriver());
-	
+		
 	private DataStructurePage DataStrucPage = new DataStructurePage(Factory.DriverFactory.getDriver());
 	
-	@Given("User is logged in to the application")
-	public void user_is_logged_in_to_the_application(DataTable credTable) {
-	List<Map<String, String>> credentialList = credTable.asMaps();
-	String UserName = credentialList.get(0).get("username");
-	String Password = credentialList.get(0).get("password");
 	
-	DriverFactory.getDriver().get("https://dsportalapp.herokuapp.com/login");
-
-	DataStrucPage = sgnpage.dologin(UserName, Password);
-	    
-	}
 	@Given ("User is on Home Page")
 	public void user_is_on_home_page(){
 		DataStrucPage.getHomePageTitle();

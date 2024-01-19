@@ -2,8 +2,7 @@ Feature: Tree Page Feature
 
 Background:
 Given User is logged in to the application
-|username||password|
-|SirishaSA||Success4you!|
+
 
 Scenario: Overview of Trees Page
 Given User is on Home Page

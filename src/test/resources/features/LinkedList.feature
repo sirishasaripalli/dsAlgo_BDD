@@ -2,8 +2,7 @@ Feature: linked list feature
 
   Background: 
     Given User is logged in to the application
-      |username||password|
-      |SirishaSA||Success4you!|
+
 
   Scenario: Linked list page
     Given user is on home page
@@ -30,7 +29,7 @@ Feature: linked list feature
     Then Result is displayed on the console
 
     
-    Scenario: Linked list pages 
+    Scenario: Linked list pages Creating linked lis
 Given user is on home page
 When user clicks on the get started button Linkedlist section
 Then linked list opens up
@@ -45,7 +44,7 @@ When User enters the text in the TextBox "print(Hello)"
 And Clicks on the Run button
 Then Result is displayed on the console
 
-Scenario: Linked list pages 
+Scenario: Linked list pages TYpes of linked list
 Given user is on home page
 When user clicks on the get started button Linkedlist section
 Then linked list opens up
@@ -60,7 +59,7 @@ When User enters the text in the TextBox "print(Hello)"
 And Clicks on the Run button
 Then Result is displayed on the console
 
-Scenario: Linked list pages 
+Scenario: Linked list pages Implementation in Lists
 Given user is on home page
 When user clicks on the get started button Linkedlist section
 Then linked list opens up
@@ -75,7 +74,7 @@ When User enters the text in the TextBox "print(Hello)"
 And Clicks on the Run button
 Then Result is displayed on the console
 
-Scenario: Linked list pages 
+Scenario: Linked list pages Traversal in Lists 
 Given user is on home page
 When user clicks on the get started button Linkedlist section
 Then linked list opens up
@@ -90,7 +89,7 @@ When User enters the text in the TextBox "print(Hello)"
 And Clicks on the Run button
 Then Result is displayed on the console
 
-Scenario: Linked list pages 
+Scenario: Linked list pages Insertion in Lists
 Given user is on home page
 When user clicks on the get started button Linkedlist section
 Then linked list opens up
@@ -105,7 +104,7 @@ When User enters the text in the TextBox "print(Hello)"
 And Clicks on the Run button
 Then Result is displayed on the console
 
-Scenario: Linked list pages 
+Scenario: Linked list pages Deletion in Lists
 Given user is on home page
 When user clicks on the get started button Linkedlist section
 Then linked list opens up

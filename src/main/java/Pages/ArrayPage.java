@@ -15,6 +15,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import Utilities.ReadExcelDataRows;
+
 
 public class ArrayPage {
 
@@ -119,9 +121,11 @@ public class ArrayPage {
 		WebElement ele = driver.findElement(TryEditorTxtBox);
 		WebDriverWait Wait = new WebDriverWait(driver,Duration.ofSeconds(5));
 		Wait.until(ExpectedConditions.visibilityOf(ele));
-		String TextToInput = "print 'Hello'";
+		//String TextToInput = "print 'Hello'";
+		String TextToInput = ReadExcelDataRows.ReadRows().get(2).toString();
+		System.out.println("I read it from Excel: "+TextToInput);
 		action.sendKeys(ele, TextToInput).perform();
-		System.out.println("I entered text box");
+
 		
 	}
 	public void RunBtn() {
